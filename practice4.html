@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namber</title>
+</head>
+
+<body>
+    <script>
+        var obj = {}
+        var num = parseInt(prompt('Введите число от 0 до 999'));
+        function separNum() {
+            if (num > 0 && num < 1000) {
+                obj.units = num % 10;
+                obj.dozens = Math.floor(num / 10 % 10);
+                obj.hundreds = Math.floor(num / 100);
+                return obj;
+            }
+            else {
+                console.log('Ошибка! Введите число от 1 до 999')
+            }
+        }
+        separNum();
+        console.log(obj);
+    </script>
+
+</body>
+
+</html>
