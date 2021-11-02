@@ -4,8 +4,9 @@
 #snake-renew,#snake-start{
     width: 150px;
     padding: 15px;
-    color: white;
-    background-color: green;
+    color: darkblue;
+    background-color:white;
+    border: royalblue solid 2px;
     text-align: center;
     cursor: pointer;
     float: left;
@@ -13,7 +14,7 @@
 }
 .game-table{
     border-collapse: collapse;
-    background-color: #3e3e3e;
+    background-color: darkblue;/*#3e3e3e*/
 }
 td.game-table-cell{
     width: 15px;
@@ -24,6 +25,9 @@ td.game-table-cell{
     background-color: white;
 }
 .food-unit{
+    background-color: rgb(149, 9, 243);
+}
+.problem-unit{
     background-color: red;
 }
 .buttons{
@@ -34,12 +38,24 @@ td.game-table-cell{
     text-align: center;
 }
 .score{
-    width: 150px;
-    padding: 15px;
-    color: white;
-    background-color: green;
-    text-align: center;
-    cursor: pointer;
-    float: left;
-    margin-right: 10px;
+    display: inline-block;
 }
+.score-text{
+    margin: 30px auto 0;
+    text-align: center;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 24px;
+    color: darkblue;
+}
+.score-point{
+    margin: 30px auto 0;
+    text-align: center;
+    display: inline-block;
+    color:darkblue;;
+   
+    font-size: 24px;
+    text-transform: uppercase;
+    
+}
+
