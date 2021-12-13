@@ -1,0 +1,87 @@
+input {
+    display: block;
+    padding: 5px;
+    margin: 0 0 10px 0;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+input:focus{
+    outline: none;
+}
+
+
+
+
+textarea{
+    width: 100%;
+    display: block;
+    resize: none;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    margin: 0 0 10px 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+form{
+    border: 2px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+fieldset{
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+legend{
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+/*input[type="submit"],
+input[type="reset"]{
+    display: block;
+    width: 50%;
+    margin: 10px auto 0 auto;
+    text-transform: uppercase;
+}*/
+
+/*input[type="submit"]:hover,
+input[type="reset"]:hover{
+    background-color: #000;
+    color: #ccc;
+}*/
+
+/*input[type="submit"]:active,
+input[type="reset"]:active{
+    background-color: #ccc;
+    color: #000;
+}*/
+
+button{
+    border: none;
+    background: rebeccapurple;
+    color: white;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.error-msg{
+    color: red;
+    margin: 10px 0;
+}
+.invalid{
+    border: 2px solid red;
+}
+.valid{
+    border: 2px solid green;
+}
+
+
+
