@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!--Задание 1-->
+    <script>
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 Увеличиваем значение а = 1 на 1, а = 2 (префиксная форма инкремента) и присваеваем это значение с, с = 2, выводим значение с в окне.
+        d = b++; alert(d);           // 1 Присваеваем значение b переменной d, d = 1 Увеличиваем значение b на 1 b = 2 (постфиксная форма инкремента) и выводим значение d в окне.
+        c = (2 + ++a); alert(c);     // 5 Выполняем действия в скопках, увеличиваем а на 1 а = 3 и прибавляем 2(у инкремента приоритет, но на результат это не влияет), полученное значение присваеваем с, с = 5, выводим  с в окне.
+        d = (2 + b++); alert(d);     // 4 Прибавляем 2 к b = 2 присваеваем полученное значение d и увеличиваем b на 1, b = 3, d = 4 выводем в окне 
+        alert(a);                    // 3 Из вычислений третьей строки получаем текущее значение а = 3 и выводим его в окне
+        alert(b);                    // 3 Из вычислений четвертой строки получаем текущее значение b = 3 и выводим его в окне
+    </script>
+
+    <!--Задание 2-->
+    <script>
+        function calcNumber(a, b) {
+            if (a >= 0 && b >= 0) {
+                return a - b;
+            } else if (a < 0 && b < 0) {
+                return a * b;
+            } return a + b;
+        }
+        a = parseInt(Math.random() * (10 - 0) + 0);
+        console.log(a);
+        b = parseInt(Math.random() * (10 - 0) + 0);
+        console.log(b);
+        calc = calcNumber(a, b);
+        console.log(calc);
+    </script>
+
+    <!--Задание 3-->
+    <script>
+        var a = parseInt(Math.random() * (15 - 0) + 0);
+
+        switch (a) {
+            case 0:
+                console.log(0);
+            case 1:
+                console.log(1);
+            case 2:
+                console.log(2);
+            case 3:
+                console.log(3);
+            case 4:
+                console.log(4);
+            case 5:
+                console.log(5);
+            case 6:
+                console.log(6);
+            case 7:
+                console.log(7);
+            case 8:
+                console.log(8);
+            case 9:
+                console.log(9);
+            case 10:
+                console.log(10);
+            case 11:
+                console.log(11);
+            case 12:
+                console.log(12);
+            case 13:
+                console.log(13);
+            case 14:
+                console.log(14);
+            case 15:
+                console.log(15);
+        }
+    </script>
+    <!--Задание 4-->
+    <script>
+        function sum(a, b) {
+            return a + b;
+        }
+        function diff(a, b) {
+            return a - b;
+        }
+        function mult(a, b) {
+            return a * b;
+        }
+        function quot(a, b) {
+            return a / b;
+        }
+        var a = parseInt(Math.random() * (10 - 0) + 0);
+        console.log(a);
+        var b = parseInt(Math.random() * (10 - 0) + 0);
+        console.log(b);
+
+        sum = sum(a, b);
+        console.log(sum);
+
+        diff = diff(a, b);
+        console.log(diff);
+
+        mult = mult(a, b);
+        console.log(mult);
+
+        quot = quot(a, b);
+        console.log(quot);
+    </script>
+
+    <!--Задание 5-->
+    <script>
+        a = +prompt("Введите число");
+        b = +prompt("Введите число");
+        operation = prompt("Укажите математическое действие +, -, *, / ");
+        function sum(a, b) {
+            return a + b;
+        }
+        function diff(a, b) {
+            return a - b;
+        }
+        function mult(a, b) {
+            return a * b;
+        }
+        function quot(a, b) {
+            return a / b;
+        }
+        function mathOperation(a, b, operation) {
+            switch (operation) {
+                case "+":
+                    sum = sum(a, b);
+                    alert(sum);
+                    break;
+                case "-":
+                    alert(diff(a, b));
+                    break;
+                case "*":
+                    alert(mult(a, b));
+                    break;
+                case "/":
+                    alert(quot(a, b));
+                    break;
+            }
+        }
+
+        mathOperation(a, b, operation);
+
+    </script>
+
+</body>
+
+</html>

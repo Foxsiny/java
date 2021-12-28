@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+h3{
+   color: midnightblue;
+   display: block;
+   text-align: center;
+   
+}
+p{
+    color:orangered;
+    display: block;
+    text-align: center;
+    font: size 36px;
+    
+}
+
+header {
+    height: 75px;
+    display: flex;
+    background-color:mediumslateblue;
+  }
+.btn-cart{
+    display: block;
+    width: 100%;
+    margin: 0 0 16px 0;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: #000000;
+    text-align: left; 
+}
+
+.products{
+      display: flex;
+      justify-content: space-around ;
+      width: 100%;
+  }
+.product-item{
+    width: 200px;
+    height: 350px;
+    background-color:lightgoldenrodyellow;
+  }
+.buy-btn{
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: lightsteelblue;
+    border: 2px solid magenta;
+}
+.item-pic{
+    width: 100%;
+   
+}

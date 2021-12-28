@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Введите ваши данные</legend>
+            <div>
+                <label for="fio">ФИО</label>
+                <input id="fio" type="text" placeholder="Иванов Иван Иванович">
+            </div>
+
+            <div>
+                <label for="Password">
+                    Пароль
+                    <input id="Password" type="password" placeholder="123456789">
+                </label>
+            </div>
+        </fieldset>
+        <!--Выпадающий список-->
+
+        <fieldset>
+            <legend>Ваше любимое число</legend>
+            <select name="list" id="List">
+                <option value="one">1</option>
+                <option value="two">2</option>
+                <option value="three">3</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Вам нравяться вебинары</legend>
+            <label>
+                <input type="radio" name="radio-btn">Да
+            </label>
+            <label>
+                <input type="radio" name="radio-btn">Нет
+            </label>
+        </fieldset>
+
+
+        <fieldset>
+            <legend> Ваш любимый цвет</legend>
+            <label for="">
+                зеленый<input type="checkbox" checked>
+            </label>
+            <label for="">
+                синий<input type="checkbox">
+            </label>
+            <label for="">
+                красный<input type="checkbox">
+            </label>
+            <label for="">
+                черный<input type="checkbox">
+            </label>
+        </fieldset>
+
+        <textarea name="comment" id="Comment" cols="30" rows="10"> Ведите ваш комментарий</textarea>
+
+        <div>
+            <input type="submit" value="send">
+            <input type="reset" value="reset">
+        </div>
+
+
+
+    </form>
+</body>
+
+</html>

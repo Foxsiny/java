@@ -1,0 +1,23 @@
+.small{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+img{
+    display: block;
+}
+
+
+#basket img{
+height: 200px;
+}
+
+#basket {
+    display: flex;
+    }
+
+
+button{
+    margin: 20px;
+}

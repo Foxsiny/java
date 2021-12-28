@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <form action="#" method="post" class="some" id="myform">
+        <fieldset>
+            <legend>Введите ваши данные</legend>
+            <div>
+                <label for="name">
+                    Имя</label>
+                <input id="name" type="text" name="name" placeholder="Иван">
+                </label>
+            </div>
+
+            <div>
+                <label for="phone">
+                    Телефон
+                    <input id="phone" type="tel" name="phone" placeholder="+7(000)000-0000">
+                </label>
+            </div>
+            <div>
+                <label for="email">
+                    E-mail
+                    <input id="email" type="email" name="email" placeholder="text@mail.com">
+                </label>
+            </div>
+            <textarea name="comment" id="Comment" cols="30" rows="10"> Ведите ваш комментарий</textarea>
+            <button id="val-btn">Submit</button>
+        </fieldset>
+    </form>
+
+    <script src="Validator.js"></script>
+    <script>
+        window.onload = () => {
+            document.getElementById('myform').addEventListener('submit', e => {
+                let valid = new Validator('myform');
+                if (!valid.valid) {
+                    e.preventDefault();
+                }
+            })
+        }
+    </script>
+
+</body>
+
+</html>

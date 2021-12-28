@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picture big-small</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="small">
+
+            <img id="red" src="img\small\1p.jpg" alt="red" onclick="f(this.id)">
+            <img id="blue" src="img\small\2p.jpg" alt="green" onclick="f(this.id)">
+            <img id="yellow" src="img\small\3p.jpg" alt="honey" onclick="f(this.id)">
+
+        </div>
+
+        <div class="big">
+            <img id="big" src="" onerror=ImageError()>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
